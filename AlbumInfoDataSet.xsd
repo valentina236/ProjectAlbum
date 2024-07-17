@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AlbumInfoDataSet" targetNamespace="http://tempuri.org/AlbumInfoDataSet.xsd" xmlns:mstns="http://tempuri.org/AlbumInfoDataSet.xsd" xmlns="http://tempuri.org/AlbumInfoDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AlbumConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AlbumConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DatabaseAlbum.Properties.Settings.GlobalReference.Default.AlbumConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ViewAlbumInfoTableAdapter" GeneratorDataComponentClassName="ViewAlbumInfoTableAdapter" Name="ViewAlbumInfo" UserDataComponentName="ViewAlbumInfoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AlbumConnectionString (Settings)" DbObjectName="Album.dbo.ViewAlbumInfo" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT album_cod, album_name, release_date, artist_name, manufacturer_name, format_name, genre_name, typeName, unit_price FROM dbo.ViewAlbumInfo</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="album_cod" DataSetColumn="album_cod" />
+              <Mapping SourceColumn="album_name" DataSetColumn="album_name" />
+              <Mapping SourceColumn="release_date" DataSetColumn="release_date" />
+              <Mapping SourceColumn="artist_name" DataSetColumn="artist_name" />
+              <Mapping SourceColumn="manufacturer_name" DataSetColumn="manufacturer_name" />
+              <Mapping SourceColumn="format_name" DataSetColumn="format_name" />
+              <Mapping SourceColumn="genre_name" DataSetColumn="genre_name" />
+              <Mapping SourceColumn="typeName" DataSetColumn="typeName" />
+              <Mapping SourceColumn="unit_price" DataSetColumn="unit_price" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AlbumInfoDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="AlbumInfoDataSet" msprop:Generator_DataSetName="AlbumInfoDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ViewAlbumInfo" msprop:Generator_RowEvHandlerName="ViewAlbumInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="ViewAlbumInfoRowDeleted" msprop:Generator_RowDeletingName="ViewAlbumInfoRowDeleting" msprop:Generator_RowEvArgName="ViewAlbumInfoRowChangeEvent" msprop:Generator_TablePropName="ViewAlbumInfo" msprop:Generator_RowChangedName="ViewAlbumInfoRowChanged" msprop:Generator_RowChangingName="ViewAlbumInfoRowChanging" msprop:Generator_TableClassName="ViewAlbumInfoDataTable" msprop:Generator_RowClassName="ViewAlbumInfoRow" msprop:Generator_TableVarName="tableViewAlbumInfo" msprop:Generator_UserTableName="ViewAlbumInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="album_cod" msprop:Generator_ColumnPropNameInRow="album_cod" msprop:Generator_ColumnPropNameInTable="album_codColumn" msprop:Generator_ColumnVarNameInTable="columnalbum_cod" msprop:Generator_UserColumnName="album_cod" type="xs:short" />
+              <xs:element name="album_name" msprop:Generator_ColumnPropNameInRow="album_name" msprop:Generator_ColumnPropNameInTable="album_nameColumn" msprop:Generator_ColumnVarNameInTable="columnalbum_name" msprop:Generator_UserColumnName="album_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="release_date" msprop:Generator_ColumnPropNameInRow="release_date" msprop:Generator_ColumnPropNameInTable="release_dateColumn" msprop:Generator_ColumnVarNameInTable="columnrelease_date" msprop:Generator_UserColumnName="release_date" type="xs:dateTime" />
+              <xs:element name="artist_name" msprop:Generator_ColumnPropNameInRow="artist_name" msprop:Generator_ColumnPropNameInTable="artist_nameColumn" msprop:Generator_ColumnVarNameInTable="columnartist_name" msprop:Generator_UserColumnName="artist_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="manufacturer_name" msprop:Generator_ColumnPropNameInRow="manufacturer_name" msprop:Generator_ColumnPropNameInTable="manufacturer_nameColumn" msprop:Generator_ColumnVarNameInTable="columnmanufacturer_name" msprop:Generator_UserColumnName="manufacturer_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="format_name" msprop:Generator_ColumnPropNameInRow="format_name" msprop:Generator_ColumnPropNameInTable="format_nameColumn" msprop:Generator_ColumnVarNameInTable="columnformat_name" msprop:Generator_UserColumnName="format_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="genre_name" msprop:Generator_ColumnPropNameInRow="genre_name" msprop:Generator_ColumnPropNameInTable="genre_nameColumn" msprop:Generator_ColumnVarNameInTable="columngenre_name" msprop:Generator_UserColumnName="genre_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="typeName" msprop:Generator_ColumnPropNameInRow="typeName" msprop:Generator_ColumnPropNameInTable="typeNameColumn" msprop:Generator_ColumnVarNameInTable="columntypeName" msprop:Generator_UserColumnName="typeName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="unit_price" msprop:Generator_ColumnPropNameInRow="unit_price" msprop:Generator_ColumnPropNameInTable="unit_priceColumn" msprop:Generator_ColumnVarNameInTable="columnunit_price" msprop:Generator_UserColumnName="unit_price" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ViewAlbumInfo" />
+      <xs:field xpath="mstns:album_cod" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
